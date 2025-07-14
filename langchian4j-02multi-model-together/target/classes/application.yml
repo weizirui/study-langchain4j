@@ -1,0 +1,6 @@
+server:
+  port: 9992
+
+spring:
+  application:
+    name: langchian4j-02multi-model-together
