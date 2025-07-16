@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="langchain4j-01helloworld" />
         <module name="langchian4j-02multi-model-together" />
+        <module name="langchain4j-03boot-integration" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -18,6 +19,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="langchain4j-01helloworld" options="-parameters" />
+      <module name="langchain4j-03boot-integration" options="-parameters" />
       <module name="langchain4j-study" options="-parameters" />
       <module name="langchian4j-02multi-model-together" options="-parameters" />
     </option>
