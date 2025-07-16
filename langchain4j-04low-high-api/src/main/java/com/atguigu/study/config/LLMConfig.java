@@ -20,7 +20,7 @@ public class LLMConfig
     public ChatModel chatModelQwen()
     {
         return OpenAiChatModel.builder()
-                    .apiKey(System.getenv("aliQwen-api"))
+                    .apiKey(System.getenv("DASH_SCOPE_API_KEY"))
                     .modelName("qwen-plus")
                     .baseUrl("https://dashscope.aliyuncs.com/compatible-mode/v1")
                 .build();
@@ -35,7 +35,7 @@ public class LLMConfig
     {
         return
                 OpenAiChatModel.builder()
-                        .apiKey(System.getenv("deepseek-api"))
+                        .apiKey(System.getenv("DEEP_SEEK_API_KEY"))
                         .modelName("deepseek-chat")
                         //.modelName("deepseek-reasoner")
                         .baseUrl("https://api.deepseek.com/v1")
