@@ -1,6 +1,0 @@
-server:
-  port: 9991
-
-spring:
-  application:
-    name: langchain4j-01helloworld
