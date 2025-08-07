@@ -53,8 +53,10 @@ public class McpCallServerController
          * 1.6 BAIDU_MAP_API_KEY 是访问百度地图开放平台API的AK
         */
         McpTransport transport = new StdioMcpTransport.Builder()
-                .command(List.of("cmd", "/c", "npx", "-y", "@baidumap/mcp-server-baidu-map"))
-                .environment(Map.of("BAIDU_MAP_API_KEY", System.getenv("BAIDU_MAP_API_KEY")))
+                .command(List.of("npx", "-y", "@baidumap/mcp-server-baidu-map"))
+                .environment(Map.of(
+                        "BAIDU_MAP_API_KEY", "01JPthzAeik9oPPZKB774EmcllbCsM5o"
+                ))
                 .logEvents(true)
                 .build();
 
